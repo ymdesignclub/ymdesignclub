@@ -30,7 +30,7 @@ public class PlayNote : MonoBehaviour
         //Mathf.FloorToInt() just rounds the number down to the nearest integer 1.9 -> 1
 
         float x_offset = 1; //Saves the correct offset for the notes
-        float increment = 69.6549f; //If another key is added it is this far away from the previous one
+        float increment = 62.5f; //If another key is added it is this far away from the previous one
         for (int i = first_key; i < first_key + source.transform.childCount; i++)//For loop that loops though all the availiable keys
         {
             int selected_object_index = i - first_key; //Used to retrive the correct child. Ranges from 0 - 9
