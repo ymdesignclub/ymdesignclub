@@ -932,7 +932,7 @@ MonoBehaviour:
   spawn_area:
   - {x: 9, y: 5}
   - {x: 9, y: -5}
-  difficulty_curve_time: 10
+  difficulty_curve_time: 300
   pipe_x_size: 1
 --- !u!4 &1303490532
 Transform:
