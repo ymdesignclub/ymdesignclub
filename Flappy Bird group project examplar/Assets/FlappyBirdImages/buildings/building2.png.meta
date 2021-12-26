@@ -97,12 +97,12 @@ TextureImporter:
       name: building2_0
       rect:
         serializedVersion: 2
-        x: 1561
+        x: 1564
         y: 851
-        width: 479
+        width: 472
         height: 1269
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

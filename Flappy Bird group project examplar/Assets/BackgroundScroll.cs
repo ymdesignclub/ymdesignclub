@@ -18,7 +18,6 @@ public class BackgroundScroll : MonoBehaviour
     {
         CurrentCycleTime -= Time.deltaTime;
         float lerp_t = CurrentCycleTime / CycleTime;
-        print(lerp_t);
         transform.position = new Vector3(Mathf.Lerp(Scroll_lerp[1], Scroll_lerp[0], lerp_t), transform.position.y, transform.position.z);
         if(lerp_t <= 0) 
         {
