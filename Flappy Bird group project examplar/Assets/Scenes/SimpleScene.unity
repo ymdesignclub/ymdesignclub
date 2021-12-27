@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 148188707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 822127566}
   m_RootOrder: 1
@@ -194,7 +194,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -8030835215644163416, guid: f7ee2b0197ea9a64485efd2309da1487, type: 3}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9982,7 +9982,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 76ac8405988f13548bb2ae9559d32853, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -10358,7 +10358,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.65
+  m_Radius: 0.4
 --- !u!114 &822127570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10375,7 +10375,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   hitbox_center: {fileID: 308603325}
-  hitbox_radius: 0.65
+  hitbox_radius: 0.4
   score_text: {fileID: 1809315967}
   game_over: {fileID: 637022226}
 --- !u!1 &1019701264
@@ -15280,7 +15280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1056354319
 Transform:
   m_ObjectHideFlags: 0
@@ -15565,7 +15565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c28b195bb763b4eb200605e3977e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipe: {fileID: 1549676708805490970, guid: b6dffbc80aaf58f4cba2cb8c22c1ba55, type: 3}
+  pipe: {fileID: 5220797935793398923, guid: 11a2ebd40c6059d419d139d381052620, type: 3}
   gap_sizes:
   - 4
   - 2
@@ -15611,7 +15611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1433519733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15668,7 +15668,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6bf0294e2255e4e469de1673797ad8ca, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15676,7 +15676,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1433519735
