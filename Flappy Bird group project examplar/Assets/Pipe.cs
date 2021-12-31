@@ -7,7 +7,7 @@ public class Pipe : MonoBehaviour
     public float speed; //Declares the speed the pipes move at. Is Assigned by the Map script
     public float life_time; //Declares how long the pipes will last until "despawning"
     private Transform player_pos; //Declares the Player transform component
- 
+    private bool GavePoint = false; //Will prevent points from being given twice from this pipe
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +32,12 @@ public class Pipe : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)//A special function that runs when a trigger collider touches another trigger collider
     {
-        Player player = FindObjectOfType<Player>(); //finds a player component in the hierarchy / list of all GameObjects
-        player.GivePoint(); //Gives a point to the Player by calling it's public function
+        if (!GavePoint) 
+        {
+            Player player = FindObjectOfType<Player>(); //finds a player component in the hierarchy / list of all GameObjects
+            player.GivePoint(); //Gives a point to the Player by calling it's public function
+            GavePoint = true; //Prevents giving two points from the same pipe
+        }
+       
     }
 }
