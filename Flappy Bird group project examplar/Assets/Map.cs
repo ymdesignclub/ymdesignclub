@@ -47,7 +47,7 @@ public class Map : MonoBehaviour
             pipe_speed = Mathf.Lerp(speeds[0], speeds[1], difficulty); //the pipe_speed controls how fast the pipes move
 
             float top_spawn = Mathf.Max(spawn_area[0].y, spawn_area[1].y) - gap_size; //Picks the position at which the pipe can spawn without makeing the gap obstructed above the screen
-            float bottom_spawn = Mathf.Min(spawn_area[0].y, spawn_area[1].y) + gap_size; //Picks the position at which the pipe can spawn without the gap obstructed below the screen
+            float bottom_spawn = Mathf.Min(spawn_area[0].y, spawn_area[1].y); //Picks the position at which the pipe can spawn without the gap obstructed below the screen
             float left_spawn = Mathf.Min(spawn_area[0].x, spawn_area[1].x) + pipe_x_size; //Picks the position that allows the pipe to be hidden
 
             float spawnY = Random.Range(bottom_spawn, top_spawn); //Randomizes the location that the top pipe spawns between the 2 limit positions
@@ -56,12 +56,17 @@ public class Map : MonoBehaviour
             GameObject new_pipe = Instantiate(pipe, new Vector2(spawnX, spawnY), Quaternion.identity); //Creates a new pipe at the top position
             GameObject new_pipe2 = Instantiate(pipe, new Vector2(spawnX, spawnY + gap_size), Quaternion.identity); //Creates a new pipe at the bottom position
 
-            new_pipe2.transform.Rotate(Vector3.forward, 180); //Flips the bottom pipe so it dosen't cover the top pipe
+            new_pipe2.transform.Rotate(Vector3.forward, 180); //Flips the bottom pipe so it dosen't cover the bottom pipe
             new_pipe2.GetComponent<BoxCollider2D>().enabled = false; //Disables the score collider for the bottom pipe
 
             new_pipe.GetComponent<Pipe>().speed = pipe_speed; //Assigns the speed for both pipes using the pipes public speed variables
             new_pipe2.GetComponent<Pipe>().speed = pipe_speed;
 
+            GraphicRandomizer gr1 = new_pipe.GetComponent<GraphicRandomizer>();
+            GraphicRandomizer gr2 = new_pipe2.GetComponent<GraphicRandomizer>();
+
+            gr1.chosen_sprite = Random.Range(0, Mathf.Min(gr1.sprites.Length, gr2.sprites.Length));
+            gr2.chosen_sprite = gr1.chosen_sprite; //They both should have the same graphic
 
             cooldown = spacing / Mathf.Min(pipe_speed, 1);//Mathf.Min will prevent 0 division errors 
         }

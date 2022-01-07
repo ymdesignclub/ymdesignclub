@@ -73643,7 +73643,7 @@ MonoBehaviour:
   spawn_area:
   - {x: 15, y: 5}
   - {x: 15, y: -5}
-  difficulty_curve_time: 20
+  difficulty_curve_time: 300
   pipe_x_size: 1
 --- !u!4 &1303490532
 Transform:
@@ -97990,7 +97990,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933682276}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417948c54c1f654a83806ace94e2b07, type: 3}
   m_Name: 
