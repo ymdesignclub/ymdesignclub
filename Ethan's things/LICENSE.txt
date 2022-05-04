@@ -19,3 +19,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+/////////////////////////////////////////////////////////////////////////////////////
+Copyright © 5/4/2022 Catmuscles
+
+Copyleft: this work of art is free, you can redistribute it and/or modify it according to terms of the Free Art license. You will find a specimen of this license on the site Copyleft Attitude
+http://artlibre.org as well as on other sites.
